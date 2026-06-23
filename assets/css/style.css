@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul,
+dl,
+fieldset,
+pre {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(0deg, #0E0E0E 0%, #0E0E0E 100%), #FFF;
+}
+
+/* navbar css----------------------------------------------------------------start */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.full-header {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    padding: 16px 50px 15px 55px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    background: rgba(14, 14, 14, 0.96);
+    backdrop-filter: blur(10px);
+    z-index: 15;
+}
+
+.navbar-inner-wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.navbar-logo-dev {
+    width: 240px;
+    height: 32px;
+
+}
+
+.navbar-logo-dev img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar-link-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+
+}
+
+.navbar-link-list {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    list-style: none;
+}
+
+.contralnavlink {
+    color: #FFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contralnavlink:hover {}
+
+.navbar-link-list li {
+    opacity: 0.5;
+    background: var(--Blackish-0E, #0E0E0E);
+}
+
+
+.blackbtn {
+    display: flex;
+    border: 1.5px solid rgba(203, 33, 35, 0.60);
+    padding: 10px 24px 9px 24px;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+
+}
+
+.blackbtn:hover {
+    background: var(--Red, #CB2123);
+    color: var(--White, #FFF);
+}
+
+.whitebtn {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    display: flex;
+    padding: 14px 28px 15px 27px;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid rgba(245, 245, 243, 0.30);
+    width: fit-content;
+}
+
+.whitebtn:hover {
+    background: var(--Red, #CB2123);
+    color: var(--White, #FFF);
+}
+
+.navbar-search-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 28px;
+    opacity: 0.5;
+    background: var(--Blackish-0E, #0E0E0E);
+}
+
+.header-search {
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+}
+
+.header-search img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-tilly img {
+    width: 20px;
+    height: 12.5px;
+    margin-left: 4px;
+}
+
+/* navbar end---------------------------------------------------------------------- */
+/* hero section-------------------------------------------------- */
+.hero-section {
+    position: relative;
+    padding-top: 48%;
+    min-height: 450px;
+    background: radial-gradient(60% 120% at 50% 100%, rgba(18, 35, 58, 0.90) 0%, rgba(18, 35, 58, 0.00) 65%), radial-gradient(40% 80% at 70% 10%, rgba(22, 40, 70, 0.50) 0%, rgba(22, 40, 70, 0.00) 60%);
+}
+
+.hero-video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-section::after {
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(60% 120% at 50% 100%, rgba(18, 35, 58, 0.90) 0%, rgba(18, 35, 58, 0.00) 65%), radial-gradient(40% 80% at 70% 10%, rgba(22, 40, 70, 0.50) 0%, rgba(22, 40, 70, 0.00) 60%);
+}
+
+.hero-textcontent {
+    position: absolute;
+    left: 56px;
+    bottom: 120px;
+    max-width: 509px;
+    z-index: 2;
+}
+
+.h4heading {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.h1heading {
+    color: var(--White, #FFF);
+    font-family: "Epilogue", sans-serif;
+    font-size: 120px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 83%;
+    letter-spacing: -2.32px;
+    text-transform: uppercase;
+}
+
+.h1span {
+    color: var(--White, rgba(255, 255, 255, 0.48));
+    font-family: "Epilogue", sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 100px;
+    letter-spacing: -2.32px;
+    text-transform: uppercase;
+}
+
+.para {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    /* 150% */
+}
+
+.hero-nobtn {
+    color: var(--White, #FFF);
+    font-family: "DM Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: none;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 40px;
+    margin-top: 48px;
+}
+
+/* our brand section start----------------------------------------------------- */
+.brand-wrapper {
+    position: relative;
+    padding-top: 70%;
+
+}
+
+.brand-wrapper::after {
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0deg, rgba(14, 14, 14, 0.92) 0%, rgba(14, 14, 14, 0.10) 55%, rgba(14, 14, 14, 0.00) 100%);
+}
+
+.brand-wrapper-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand-textcontent {
+    position: absolute;
+    left: 55px;
+    bottom: 68px;
+    z-index: 2;
+    max-width: 400px;
+
+}
+
+.brand-icon-dev {
+    width: 302px;
+    height: 32px;
+    margin: 40px 0;
+}
+
+.brand-icon-dev img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.under-line {
+
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--White, #FFF);
+    opacity: 0.4;
+}
+
+.barletta-icon-dev {
+    width: 214px;
+    height: 64px;
+    margin: 28px 0;
+}
+
+/* boat-inventery section --------------------------------------------------------- */
+.boat-inventery {
+    padding: 102px 55px 72px 56px;
+}
+
+.h2heading {
+    color: var(--White, #FFF);
+    font-family: "Epilogue", ;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 60px;
+    /* 93.75% */
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.h2span {
+    color: rgba(255, 255, 255, 0.40);
+}
+
+.boats-inventery-links-dev {
+    width: 100%;
+    text-align: end;
+    list-style: none;
+    display: flex;
+    height: 34px;
+    margin-bottom: 65px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boats-inventery-links {
+    border-top: 1.5px solid rgba(255, 255, 255, 0.40);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.40);
+    border-left: 1.5px solid rgba(255, 255, 255, 0.40);
+    opacity: 0.4;
+    background: var(--Blackish-0E, #0E0E0E);
+    padding: 9px 20px 9px 24px;
+}
+
+.inventery-card-img-dev {
+    position: relative;
+    padding-top: 59%;
+
+}
+
+.inventery-card-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.inventery-card {
+    background: var(--Blackish-14, #141414);
+    border: 2px soild white;
+}
+
+.oncard {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.lisit-title {
+    color: #F5F5F3;
+
+    /* Listing Title */
+    font-family: "Epilogue", sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 24px;
+    /* 100% */
+    text-transform: uppercase;
+}
+
+.inv-card-content {
+    padding: 22px 26px 26px 24px;
+    width: 100%;
+    border: 0.5px solid white;
+}
+
+.h6heading {
+    color: #F5F5F3;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.inv-bottom {
+    margin-top: 52px;
+
+}
+
+/* <!-- complementry section ----------------------------------------------------------------- --> */
+.complementry-top-wrapper {
+    padding: 34px 40px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.complementry-top-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* slider section ---------------------------------------------------------------- */
+.slider-wrapper {
+    position: relative;
+    padding-top: 33%;
+}
+
+.slider-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.slider-content {
+    position: absolute;
+    left: 56px;
+    bottom: 80px;
+
+}
+
+.slider-icon {
+
+    max-width: 300px;
+    max-height: 217px;
+}
+
+.slider-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ful service section -------------------------------------------- */
+.full-service {
+    margin: 100px 0;
+}
+
+.full-service-head {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* test drive section ------------------------------------------------------ */
+.text-drive {
+    margin: 115px 0;
+}
+
+.test-drive-img-wrapper {
+    position: relative;
+    padding-top: 97%;
+}
+
+.test-drive-img-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.test-drive-content-wrapper {
+    background: var(--Blackish-1A, #1A1A1A);
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.test-drive-content {
+    margin: auto 72px;
+}
+
+.redbtn {
+    display: flex;
+    border: 1.5px solid rgba(203, 33, 35, 0.60);
+    padding: 10px 500px 9px 37px;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #CB2123;
+}
+
+/* test drive section ------------------------------------------------------ */
+
+
+/* premium section--------------------------------------------------------------------- */
+
+.about-section {
+    position: relative;
+    padding: 120px 0;
+    background: #0b0b0b url('../images/home/primum\ background.jpg') center bottom/cover no-repeat;
+    
+    overflow: hidden;
+}
+
+.about-section .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.about-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.showroom-image img {
+    width: 100%;
+    display: block;
+}
+
+.small-title {
+    display: block;
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 64px;
+    line-height: 0.95;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.main-title span {
+    color: #6c6c6c;
+}
+
+.intro-text {
+    color: #cfcfcf;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.divider {
+    width: 120px;
+    border-top: 1px solid rgba(255,255,255,.2);
+    margin: 30px 0;
+}
+
+.info-block {
+    margin-bottom: 40px;
+}
+
+.info-block h4 {
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.info-block h4 span {
+    color: #ff3b1f;
+}
+
+.info-block p {
+    color: #bcbcbc;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.btn-outline-light {
+    border: 1px solid rgba(255,255,255,.4);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-outline-light:hover {
+    background: #fff;
+    color: #000;
+}
+.left-wrapper{
+    transform: translateY(-100px);
+}
+
+
+
+
+
+
+/* RIGHT SIDE */
+.content-wrapper{
+    padding-left: 40px;
+}
+
+.main-title{
+    font-size: 72px;
+    line-height: .9;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.left-wrapper{
+    transform: translateY(-100px);
+}
